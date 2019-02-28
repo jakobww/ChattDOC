@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>264</y>
+      <w>132</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IMessageRTDB
+--
++Connect(): boolean
++Disconnect(): boolean
++Listen(): boolean
++StopListen(): boolean
++GetIsConnected(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>546</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FirebaseUser
+--
++UUID: string
++</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>264</y>
+      <w>126</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IUser
+--
+GetUUID(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>366</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-UUID: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>456</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IFirebaseUser
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>264</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ILoginHandler
+--
++Login(IUser): boolean
++Logout(IUser): boolean
++BroadcastResult(IUser, Boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>366</y>
+      <w>168</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>LoginHandler
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>456</y>
+      <w>168</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IFirebaseLoginHandler
+--
++Login(IFirebaseUser): boolean
++Logout(IFirebaseUser): boolean
++BroadcastResult(IUser, Boolean): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>546</y>
+      <w>168</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FirebaseLoginHandler
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>510</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>420</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>420</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>510</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>366</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>MessageRTDB
+--
+-IsConnected: boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>456</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IFirebaseMessageRTDB
+--
++PutMessage(IMessage): boolean
+-MessageReceived(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>546</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FirebaseMessageRTDB
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>510</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>420</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>264</y>
+      <w>150</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IMessage
+--
++GetSender(): IUser</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>366</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+- MessageTxt: String
+- Sender: IUser
+- TimeStamp: DateTime</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>264</y>
+      <w>198</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IRoom
+--
++GetRoomUsers(String): ArrayList&lt;IUser&gt;
++GetRoomId(): String
++GetRoomName(): String
++IncomingMessage(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>366</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Room
+--
+-RoomID: String
+-RoomName
+-RoomUsers: ArrayList&lt;IUser&gt;
+-Messages: ArrayList&lt;IMessage&gt;
+-MessageHistoryCount: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>264</y>
+      <w>132</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IRoomRTDB
+--
++Connect(): boolean
++Disconnect(): boolean
++Listen(): boolean
++StopListen(): boolean
++GetIsConnected(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>366</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>RoomRTDB
+--
+-IsConnected: boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>456</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IFirebaseRoomRTDB
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>546</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FirebaseRoomRTDB
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>510</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>420</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>96</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IDatabase
+--
++GetIsConnected(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>180</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Database
+--
+-IsConnected;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>150</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>234</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>636</x>
+      <y>234</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>264</y>
+      <w>174</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>INotifier
+--
++NotifyNewMessage();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>366</y>
+      <w>174</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>INotifier
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>330</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>486</y>
+      <w>198</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>INotifyRoom
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>558</y>
+      <w>198</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>NotifyRoom
+--
+-ShouldBeNotified: boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1026</x>
+      <y>450</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1026</x>
+      <y>522</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>486</y>
+      <w>174</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IRoomNotifier
+--
++NotifyNewMessage();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>594</y>
+      <w>174</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>RoomNotifier
+--
++NotifyNewMessage();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>420</y>
+      <w>18</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>552</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
