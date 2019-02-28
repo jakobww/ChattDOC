@@ -42,7 +42,7 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>DataDB</panel_attributes>
+    <panel_attributes>MessageDB</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -132,11 +132,11 @@ Receives</panel_attributes>
     <coordinates>
       <x>640</x>
       <y>150</y>
-      <w>280</w>
+      <w>250</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Broadcasts new messages</panel_attributes>
+Broadcasts new data</panel_attributes>
     <additional_attributes>30.0;10.0;90.0;10.0;90.0;80.0;10.0;80.0;10.0;30.0</additional_attributes>
   </element>
   <element>
