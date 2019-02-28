@@ -471,7 +471,8 @@ GetUUID(): String
     </coordinates>
     <panel_attributes>IDatabase
 --
-+GetIsConnected(): boolean</panel_attributes>
++GetIsConnected(): boolean
++GetHasInternet();</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -484,7 +485,8 @@ GetUUID(): String
     </coordinates>
     <panel_attributes>Database
 --
--IsConnected;</panel_attributes>
+-IsConnected;
+-HasInternet</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
